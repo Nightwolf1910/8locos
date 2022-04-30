@@ -19,9 +19,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/ic_launcher_background" />
+        app:srcCompat="@drawable/Mesa" />
 
-    <FrameLayout
+    <RelativeLayout
         android:id="@+id/frameMe"
         android:layout_width="317dp"
         android:layout_height="201dp"
@@ -32,24 +32,26 @@
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="165dp"
-            android:layout_height="198dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="false"
             app:srcCompat="@drawable/mazo" />
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="142dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/imageView3"
-            android:layout_alignTop="@id/imageView3"
+            android:layout_marginLeft="20dp"
             app:srcCompat="@drawable/mazo" />
 
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            app:srcCompat="@drawable/mazo" />
-    </FrameLayout>
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/mazo"
+            android:layout_alignLeft="@id/imageView4"/>
+    </RelativeLayout>
 
     <FrameLayout
         android:id="@+id/frameJ1"
