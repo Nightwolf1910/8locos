@@ -23,7 +23,7 @@
 
     <RelativeLayout
         android:id="@+id/frameMe"
-        android:layout_width="317dp"
+        android:layout_width="350dp"
         android:layout_height="201dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,9 +48,49 @@
             android:id="@+id/imageView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/imageView4"
             android:layout_marginLeft="20dp"
-            app:srcCompat="@drawable/mazo"
-            android:layout_alignLeft="@id/imageView4"/>
+            app:srcCompat="@drawable/mazo" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/imageView5"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/mazo" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/imageView6"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/mazo" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/imageView7"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/mazo" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/imageView8"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/mazo" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/imageView9"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/mazo" />
     </RelativeLayout>
 
     <FrameLayout
