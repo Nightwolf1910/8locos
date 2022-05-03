@@ -22,10 +22,20 @@
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ic_launcher_background" />
 
+    <pe.edu.ulima.pm.a8locos.Cartas
+        android:id="@+id/mesa"
+        android:layout_width="122dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+        <!--app:srcCompat="@drawable/mazo"-->
+
     <RelativeLayout
         android:id="@+id/frameMe"
-        android:layout_width="350dp"
-        android:layout_height="201dp"
+        android:layout_width="356dp"
+        android:layout_height="150dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -96,7 +106,7 @@
 
     // Jugador de la Izquierda (P2).
     <RelativeLayout
-        android:id="@+id/frameJ1"
+        android:id="@+id/frameJ2"
         android:layout_width="100dp"
         android:layout_height="280dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -106,7 +116,7 @@
         tools:ignore="NotSibling">
 
         <ImageView
-            android:id="@+id/imageView11"
+            android:id="@+id/carta1J2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
@@ -114,64 +124,64 @@
             app:srcCompat="@drawable/mazo" />
 
         <ImageView
-            android:id="@+id/imageView12"
+            android:id="@+id/carta2J2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@id/imageView11"
+            android:layout_alignBottom="@id/carta1J2"
             android:layout_alignParentTop="true"
             android:layout_marginTop="20dp"
             app:srcCompat="@drawable/mazo" />
 
         <ImageView
-            android:id="@+id/imageView13"
+            android:id="@+id/carta3J2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignTop="@id/carta2J2"
             android:layout_alignParentTop="true"
-            android:layout_alignTop="@id/imageView12"
             android:layout_marginTop="40dp"
             app:srcCompat="@drawable/mazo" />
 
         <ImageView
-            android:id="@+id/imageView14"
+            android:id="@+id/carta4J2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_alignTop="@id/imageView13"
+            android:layout_alignTop="@id/carta3J2"
             android:layout_marginTop="60dp"
             app:srcCompat="@drawable/mazo" />
 
         <ImageView
-            android:id="@+id/imageView15"
+            android:id="@+id/carta5J2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_alignTop="@id/imageView14"
+            android:layout_alignTop="@id/carta4J2"
             android:layout_marginTop="80dp"
             app:srcCompat="@drawable/mazo" />
 
         <ImageView
-            android:id="@+id/imageView16"
+            android:id="@+id/carta6J2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_alignTop="@id/imageView15"
+            android:layout_alignTop="@id/carta5J2"
             android:layout_marginTop="100dp"
             app:srcCompat="@drawable/mazo" />
         <ImageView
-            android:id="@+id/imageView17"
+            android:id="@+id/carta7J2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_marginTop="120dp"
-            android:layout_alignTop="@id/imageView16"
+            android:layout_alignTop="@id/carta6J2"
             app:srcCompat="@drawable/mazo" />
 
         <ImageView
-            android:id="@+id/imageView18"
+            android:id="@+id/carta8J2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_alignTop="@id/imageView17"
+            android:layout_alignTop="@id/carta7J2"
             android:layout_marginTop="140dp"
             app:srcCompat="@drawable/mazo" />
 
@@ -180,7 +190,7 @@
 
     // Jugador de la Derecha (P3).
     <FrameLayout
-        android:id="@+id/frameJ2"
+        android:id="@+id/frameJ3"
         android:layout_width="100dp"
         android:layout_height="280dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -188,7 +198,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/imageView19"
+            android:id="@+id/carta1J3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
@@ -196,74 +206,76 @@
             app:srcCompat="@drawable/mazo" />
 
         <ImageView
-            android:id="@+id/imageView20"
+            android:id="@+id/carta2J3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@id/imageView19"
+            android:layout_alignBottom="@id/carta1J3"
             android:layout_alignParentTop="true"
             android:layout_marginTop="20dp"
             app:srcCompat="@drawable/mazo" />
 
         <ImageView
-            android:id="@+id/imageView21"
+            android:id="@+id/carta3J3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_alignTop="@id/imageView20"
+            android:layout_alignTop="@id/carta2J3"
             android:layout_marginTop="40dp"
             app:srcCompat="@drawable/mazo" />
 
         <ImageView
-            android:id="@+id/imageView22"
+            android:id="@+id/carta4J3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_alignTop="@id/imageView21"
+            android:layout_alignTop="@id/carta3J3"
             android:layout_marginTop="60dp"
             app:srcCompat="@drawable/mazo" />
 
         <ImageView
-            android:id="@+id/imageView23"
+            android:id="@+id/carta5J3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_alignTop="@id/imageView22"
+            android:layout_alignTop="@id/carta4J3"
             android:layout_marginTop="80dp"
             app:srcCompat="@drawable/mazo" />
 
         <ImageView
-            android:id="@+id/imageView24"
+            android:id="@+id/carta6J3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_alignTop="@id/imageView23"
+            android:layout_alignTop="@id/carta5J3"
             android:layout_marginTop="100dp"
             app:srcCompat="@drawable/mazo" />
         <ImageView
-            android:id="@+id/imageView25"
+            android:id="@+id/carta7J3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_marginTop="120dp"
-            android:layout_alignTop="@id/imageView24"
+            android:layout_alignTop="@id/carta6J3"
             app:srcCompat="@drawable/mazo" />
 
         <ImageView
-            android:id="@+id/imageView26"
+            android:id="@+id/carta8J3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_alignTop="@id/imageView25"
+            android:layout_alignTop="@id/carta7J3"
             android:layout_marginTop="140dp"
             app:srcCompat="@drawable/mazo" />
 
     </FrameLayout>
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/Maz"
         android:layout_width="122dp"
-        android:layout_height="170dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="28dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/mazo" />
